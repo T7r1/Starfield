@@ -14,7 +14,7 @@ void draw(){
   }
 }
 class Particle{
-  int myC;
+  int myC, myO;
   double myX, myY, myA, myS;
     Particle(){
       myX = 250;
@@ -22,13 +22,14 @@ class Particle{
       myA = Math.random()*2*Math.PI; 
       myC = color(252,248,196);
       myS = (Math.random()*10)+1;
+      myO = (int)(Math.random()*60)+60;
     }
     void move(){
       myX = myX + (Math.cos(myA)*myS);
       myY = myY + (Math.sin(myA)*myS);
     }
     void show(){
-      fill(myC);
+      fill(myC, myO);
       ellipse((float)myX,(float)myY,10,10);
 }
 class OddballParticle extends Particle{
@@ -57,9 +58,10 @@ class OddballParticle extends Particle{
       myA = Math.random()*2*Math.PI; 
       myC = color(111,126,152);
       myS = Math.random()*10;
+      myO = (int)(Math.random()*60)+60;
 }
 void show(){
-  fill(myC);
+  fill(myC, myO);
   ellipse((float)myX,(float)myY,60,60);
 }
 }
