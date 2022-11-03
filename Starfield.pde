@@ -1,14 +1,11 @@
 Particle[] hi =  new Particle[1000];
-OddballParticle bye; 
-void setup()
-{
+void setup(){
   size(500,500);
    for(int i = 0; i < hi.length ; i++){
   hi[i] = new Particle();
   }
 }
-void draw()
-{
+void draw(){
   background(0);
   for(int i = 0; i < hi.length; i++){
   hi[i].show();
@@ -53,15 +50,13 @@ class OddballParticle extends Particle{
     }
 }
 }
-
 class OddballParticle extends Particle{
   OddballParticle(){
       myX = 250;
       myY = 250;
       myA = Math.random()*2*Math.PI; 
       myC = color((int)(Math.random()*256),(int)(Math.random()*256), 
-      (int)(Math.random()*256);
+      (int)(Math.random()*256));
       myS = Math.random()*10;
-}
 }
 }
