@@ -47,7 +47,7 @@ void move(){
     }else{
      x-=Math.cos(ang)*sped;
   y-=Math.sin(ang)*sped;
-  if (h>12000)
+  if (h>10000)
   g=0;
 }
   if (x>1000||y>1000||x<0||y<0){
