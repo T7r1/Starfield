@@ -3,6 +3,7 @@ int g=0;
 int h=0;
 void setup()
 {
+noStroke();
     size (1000,1000);
   
     bob=new Particle[900];
