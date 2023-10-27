@@ -71,15 +71,25 @@ class odd extends Particle{
   }
 void show(){
 if (s==0){
-fill(76,180,255);
 e=4;
-}else if (s==1){
-fill(255,230,19);
-e=4;
-}else{
-  fill(255,165,100);
-e=1.4;
+fill(200,240,255);
 
+ellipse((float)x,(float)y,r*(e+.5)/40,r*(e+1)/40);
+fill(76,180,255);
+
+}else if (s==1){
+e=4;
+fill(255,255,210);
+
+ellipse((float)x,(float)y,r*(e+.5)/40,r*(e+1)/40);
+fill(255,240,115);
+
+}else{
+e=1.4;
+  fill(255,230,195);
+
+ellipse((float)x,(float)y,r*(e+1)/40,r*(e+1)/40);
+  fill(255,165,100);
 }
 ellipse((float)x,(float)y,r*e/40,r*e/40);
 
