@@ -1,7 +1,9 @@
+
 Particle []bob;
 void setup()
 {
   noStroke();
+  background(0);
     size (1000,1000);
   
     bob=new Particle[700];
@@ -49,7 +51,7 @@ void move(){
   x+=Math.cos(ang)*sped*r;
   y+=Math.sin(ang)*sped*r;
   
-  if (x>1000||y>1000||x<0||y<0){
+  if (x>1050||y>1050||x<-50||y<-50){
   ang=Math.random()*2*Math.PI;
   r=0;
   x=Math.random()/100+499.995;
@@ -63,8 +65,7 @@ class odd extends Particle{
   odd(){
   x=Math.random()/5+499.9;
   y=Math.random()/5+499.9;
-   s=(int)(Math.random()*10);
-
+  s=(int)(Math.random()*10);
   e=1;
   ang=Math.random()*2*Math.PI;
   sped=Math.random()/4.11+.005;
@@ -74,21 +75,21 @@ if (s==0){
 e=4;
 fill(200,240,255);
 
-ellipse((float)x,(float)y,r*(e+.5)/40,r*(e+1)/40);
+ellipse((float)x,(float)y,r*(e+1)/40,r*(e+1)/40);
 fill(76,180,255);
 
 }else if (s==1){
 e=4;
 fill(255,255,210);
 
-ellipse((float)x,(float)y,r*(e+.5)/40,r*(e+1)/40);
+ellipse((float)x,(float)y,r*(e+1)/40,r*(e+1)/40);
 fill(255,240,115);
 
 }else{
-e=1.4;
-  fill(255,230,195);
+e=1.2;
+  fill(255,240,205);
 
-ellipse((float)x,(float)y,r*(e+1)/40,r*(e+1)/40);
+ellipse((float)x,(float)y,r*(e+1)/45,r*(e+1)/45);
   fill(255,165,100);
 }
 ellipse((float)x,(float)y,r*e/40,r*e/40);
