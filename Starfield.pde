@@ -50,7 +50,7 @@ void move(){
   y+=Math.sin(ang)*sped*r;
   
   if (x>1000||y>1000||x<0||y<0){
-   // fill(0);
+  ang=Math.random()*2*Math.PI;
   r=0;
   x=Math.random()/100+499.995;
   y=Math.random()/100+499.995;
