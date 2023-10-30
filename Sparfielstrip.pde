@@ -3,7 +3,7 @@ void setup()
 {
   noStroke();
     size (1000,1000);
-  
+  background(0);
     bob=new Particle[700];
    for (int i=0;i<bob.length;i++){
   
