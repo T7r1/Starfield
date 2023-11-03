@@ -3,7 +3,7 @@ Particle []bob;
 void setup()
 {
   //noStroke();
-  background(255);
+  background(0);
     size (1000,1000);
   
     bob=new Particle[500];
@@ -17,7 +17,7 @@ void setup()
 }
 void draw()
 {
- background(255);
+ background(0);
  for (int u=0;u<bob.length;u++){
  bob[u].show();
  bob[u].move();
@@ -40,7 +40,8 @@ float r;
 }
 void show(){
 
-fill(235,235,255);
+//fill(235,235,255);
+  stroke(235,235,255);
 line((float)(x-Math.cos(ang)*sped*r),(float)(y-Math.sin(ang)*sped*r),(float)x,(float)y);
 
    // ellipse((float)x,(float)y,r/40,r/40);
