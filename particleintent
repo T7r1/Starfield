@@ -56,8 +56,8 @@ void move(){
 }
 if (r<30){
     h++;
-//   x=Math.random()/100+499.995;
-//  y=Math.random()/100+499.995;
+//   x=Math.random()/50+499.99;
+//  y=Math.random()/50+499.99;
 }
 }
 }
